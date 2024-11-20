@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title ><p class="car">Welcome to AUTOHUB</p></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(images-3.jpeg);
+      background-size: auto;
+    }
+
+    .container {
+      max-width: 400px;
+      width: 90%;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .container h1 {
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+      text-align: left;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #555;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 0.9rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .form-group input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      color: #fff;
+      background: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background: #0056b3;
+    }
+
+    .switch-link {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .switch-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .switch-link a:hover {
+      text-decoration: underline;
+    }
+
+    .separator {
+      margin: 1.5rem 0;
+      font-size: 0.8rem;
+      color: #aaa;
+      position: relative;
+      text-align: center;
+    }
+
+    .separator:before,
+    .separator:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: #ddd;
+    }
+
+    .separator:before {
+      left: 0;
+    }
+
+    .separator:after {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to AUTOHUB</h1>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" ><a href="index.html">Sign in</a></button>
+      </div>
+    </form>
+
+    <div class="separator">OR</div>
+
+    <form id="signup-form">
+      <div class="form-group">
+        <label for="signup-email">Email Address</label>
+        <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="signup-password" placeholder="Create a password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit"><a href="index.html">Sign up</a></button>
+      </div>
+    </form>
+
+    <div class="switch-link">
+      Already have an account? <a href="#login-form">Login here</a>
+    </div>
+  </div>
+</body>
+</html>
